@@ -1,0 +1,71 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package kelulusan2;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author User
+ */
+public class Kelulusan2 {
+
+    /**
+     * @param args the command line argumnts
+     */
+    
+  public static void main(String[] args){
+      //Buat Scanner
+      Scanner inp = new Scanner (System.in);
+      
+        String nama ="";
+        String JK ="";
+        int TB = 0;
+        
+      //Ambil Nama
+      System.out.print("Masukkan nama anda = ");
+      String Nama = inp.nextLine();
+      
+      //Ambil NIM
+      System.out.print("Masukkan NIM = ");
+      String nim = inp.next();
+      
+      //Ambil JK
+      System.out.print("Masukkan Jenis Kelamin (L/P) = ");
+      JK = inp.nextLine();
+      switch(JK){
+          case"L":
+          System.out.println("Laki-laki");
+          System.out.println("Masukkan tinggi badan = ");
+          TB = inp.nextlnt();
+          
+      }
+      
+      //Ambil Nilai
+      System.out.print("Masukkan Tinggi Badan = ");
+      int tinggi = inp.nextInt();
+      
+     // Print
+     
+     if(JK == "L"){
+         if(tinggi < 230){
+             System.out.println("Selamat Anda LULUS!!!");
+         } else if (tinggi < 170){
+             System.out.println("Anda GAGAL!!!");
+         }
+     } else {
+         if(JenisKelamin == "Perempuan"){
+             if(tinggi < 210){
+                 System.out.println("Selamat Anda LULUS!!!");
+                 
+             } else (tinggi < 160){
+             System.out.println("Anda GAGAL!!!");
+             
+         }
+         }
+     }
+  }
+}
